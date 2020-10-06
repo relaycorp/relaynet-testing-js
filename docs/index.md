@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Relaynet PoWeb binding for JS
+title: @relaycorp/relaynet-testing
 ---
-# Relaynet PoWeb binding for JS
+# Testing utilities for Relaynet implementations in JavaScript
 
 TODO
