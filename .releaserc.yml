@@ -1,1 +1,2 @@
+branch: main
 extends: '@relaycorp/shared-config'
