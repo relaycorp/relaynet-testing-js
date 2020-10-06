@@ -2,11 +2,6 @@ src
 docs/
 build/
 
-jest.*.js
-**/*.spec.*
-_test_utils.*
-coverage/
-
 tsconfig*.json
 tslint.json
 .prettierignore
