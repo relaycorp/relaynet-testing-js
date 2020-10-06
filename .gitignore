@@ -1,0 +1,11 @@
+node_modules
+build
+test
+src/**.js
+coverage
+
+docs/.bundle
+docs/.jekyll-cache
+docs/.sass-cache
+docs/_site
+docs/vendor
