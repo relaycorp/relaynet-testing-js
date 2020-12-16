@@ -46,13 +46,25 @@
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-interface tsd-is-external">
-			<a href="interfaces/certificationpath.html" class="tsd-kind-icon">Certification<wbr>Path</a>
+			<a href="interfaces/cdacertpath.html" class="tsd-kind-icon">CDACert<wbr>Path</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-is-external">
-			<a href="interfaces/nodekeys.html" class="tsd-kind-icon">Node<wbr>Keys</a>
+			<a href="interfaces/nodekeypairset.html" class="tsd-kind-icon">Node<wbr>Key<wbr>Pair<wbr>Set</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-is-external">
+			<a href="interfaces/pdacertpath.html" class="tsd-kind-icon">PDACert<wbr>Path</a>
 		</li>
 		<li class=" tsd-kind-function tsd-is-external">
-			<a href="globals.html#generatecertificationpath" class="tsd-kind-icon">generate<wbr>Certification<wbr>Path</a>
+			<a href="globals.html#generatecdacertificationpath" class="tsd-kind-icon">generateCDACertification<wbr>Path</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-external">
+			<a href="globals.html#generatenodekeypairset" class="tsd-kind-icon">generate<wbr>Node<wbr>Key<wbr>Pair<wbr>Set</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-external">
+			<a href="globals.html#generatepdacertificationpath" class="tsd-kind-icon">generatePDACertification<wbr>Path</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-external">
+			<a href="globals.html#gettomorrow" class="tsd-kind-icon">get<wbr>Tomorrow</a>
 		</li>
 		<li class=" tsd-kind-function tsd-is-external">
 			<a href="globals.html#reserializecertificate" class="tsd-kind-icon">re<wbr>Serialize<wbr>Certificate</a>
@@ -78,14 +90,18 @@
 					<section class="tsd-index-section tsd-is-external">
 						<h3>Interfaces</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/certificationpath.html" class="tsd-kind-icon">Certification<wbr>Path</a></li>
-							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/nodekeys.html" class="tsd-kind-icon">Node<wbr>Keys</a></li>
+							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/cdacertpath.html" class="tsd-kind-icon">CDACert<wbr>Path</a></li>
+							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/nodekeypairset.html" class="tsd-kind-icon">Node<wbr>Key<wbr>Pair<wbr>Set</a></li>
+							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/pdacertpath.html" class="tsd-kind-icon">PDACert<wbr>Path</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section tsd-is-external">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#generatecertificationpath" class="tsd-kind-icon">generate<wbr>Certification<wbr>Path</a></li>
+							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#generatecdacertificationpath" class="tsd-kind-icon">generateCDACertification<wbr>Path</a></li>
+							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#generatenodekeypairset" class="tsd-kind-icon">generate<wbr>Node<wbr>Key<wbr>Pair<wbr>Set</a></li>
+							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#generatepdacertificationpath" class="tsd-kind-icon">generatePDACertification<wbr>Path</a></li>
+							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#gettomorrow" class="tsd-kind-icon">get<wbr>Tomorrow</a></li>
 							<li class="tsd-kind-function tsd-is-external"><a href="globals.html#reserializecertificate" class="tsd-kind-icon">re<wbr>Serialize<wbr>Certificate</a></li>
 						</ul>
 					</section>
@@ -95,16 +111,56 @@
 		<section class="tsd-panel-group tsd-member-group tsd-is-external">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
-				<a name="generatecertificationpath" class="tsd-anchor"></a>
-				<h3>generate<wbr>Certification<wbr>Path</h3>
+				<a name="generatecdacertificationpath" class="tsd-anchor"></a>
+				<h3>generateCDACertification<wbr>Path</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-is-external">
-					<li class="tsd-signature tsd-kind-icon">generate<wbr>Certification<wbr>Path<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/certificationpath.html" class="tsd-signature-type">CertificationPath</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">generateCDACertification<wbr>Path<span class="tsd-signature-symbol">(</span>keyPairSet<span class="tsd-signature-symbol">: </span><a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/cdacertpath.html" class="tsd-signature-type">CDACertPath</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/e5513a0/src/lib/certificationPath.ts#L20">lib/certificationPath.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/264162f/src/lib/CDACertPath.ts#L15">lib/CDACertPath.ts:15</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>keyPairSet: <a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/cdacertpath.html" class="tsd-signature-type">CDACertPath</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+				<a name="generatenodekeypairset" class="tsd-anchor"></a>
+				<h3>generate<wbr>Node<wbr>Key<wbr>Pair<wbr>Set</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">generate<wbr>Node<wbr>Key<wbr>Pair<wbr>Set<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/264162f/src/lib/NodeKeyPairSet.ts#L10">lib/NodeKeyPairSet.ts:10</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+				<a name="generatepdacertificationpath" class="tsd-anchor"></a>
+				<h3>generatePDACertification<wbr>Path</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">generatePDACertification<wbr>Path<span class="tsd-signature-symbol">(</span>keyPairSet<span class="tsd-signature-symbol">: </span><a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/pdacertpath.html" class="tsd-signature-type">PDACertPath</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/264162f/src/lib/PDACertPath.ts#L24">lib/PDACertPath.ts:24</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -112,7 +168,30 @@
 								<p>Generate a dummy certification path from a public gateway to a PDA grantee.</p>
 							</div>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/certificationpath.html" class="tsd-signature-type">CertificationPath</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>keyPairSet: <a href="interfaces/nodekeypairset.html" class="tsd-signature-type">NodeKeyPairSet</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/pdacertpath.html" class="tsd-signature-type">PDACertPath</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-external">
+				<a name="gettomorrow" class="tsd-anchor"></a>
+				<h3>get<wbr>Tomorrow</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Tomorrow<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/264162f/src/lib/utils.ts#L12">lib/utils.ts:12</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -126,7 +205,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/e5513a0/src/lib/certificationPath.ts#L83">lib/certificationPath.ts:83</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/264162f/src/lib/utils.ts#L3">lib/utils.ts:3</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
