@@ -18,4 +18,5 @@ export interface DeliverParcelArgs extends CallArgs {
 export interface CollectParcelsArgs extends CallArgs {
   readonly nonceSigners: readonly Signer[];
   readonly streamingMode: StreamingMode;
+  readonly handshakeCallback?: () => void;
 }
