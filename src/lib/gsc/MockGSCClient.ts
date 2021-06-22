@@ -31,9 +31,10 @@ export class MockGSCClient implements GSCClient {
   public collectParcels(
     nonceSigners: readonly Signer[],
     streamingMode: StreamingMode,
+    handshakeCallback?: () => void,
   ): AsyncIterable<ParcelCollection> {
     const call = this.getNextCall(CollectParcelsCall);
-    const args: CollectParcelsArgs = { nonceSigners, streamingMode };
+    const args: CollectParcelsArgs = { nonceSigners, streamingMode, handshakeCallback };
     return call.call(args);
   }
 
