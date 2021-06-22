@@ -2833,7 +2833,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L23">lib/gsc/MockGSCClient.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L23">lib/gsc/MockGSCClient.ts:23</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2859,7 +2859,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L27">lib/gsc/MockGSCClient.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L27">lib/gsc/MockGSCClient.ts:27</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2873,14 +2873,14 @@ img {
 				<a name="collectparcels" class="tsd-anchor"></a>
 				<h3>collect<wbr>Parcels</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">collect<wbr>Parcels<span class="tsd-signature-symbol">(</span>nonceSigners<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Signer</span><span class="tsd-signature-symbol">[]</span>, streamingMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StreamingMode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AsyncIterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParcelCollection</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">collect<wbr>Parcels<span class="tsd-signature-symbol">(</span>nonceSigners<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Signer</span><span class="tsd-signature-symbol">[]</span>, streamingMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StreamingMode</span>, handshakeCallback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AsyncIterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParcelCollection</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Implementation of GSCClient.collectParcels</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L31">lib/gsc/MockGSCClient.ts:31</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L31">lib/gsc/MockGSCClient.ts:31</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2890,6 +2890,21 @@ img {
 							</li>
 							<li>
 								<h5>streamingMode: <span class="tsd-signature-type">StreamingMode</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> handshakeCallback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AsyncIterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ParcelCollection</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2907,7 +2922,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Implementation of GSCClient.deliverParcel</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L40">lib/gsc/MockGSCClient.ts:40</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L41">lib/gsc/MockGSCClient.ts:41</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2934,7 +2949,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Implementation of GSCClient.preRegisterNode</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L46">lib/gsc/MockGSCClient.ts:46</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L47">lib/gsc/MockGSCClient.ts:47</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2958,7 +2973,7 @@ img {
 						<aside class="tsd-sources">
 							<p>Implementation of GSCClient.registerNode</p>
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/5bd9f22/src/lib/gsc/MockGSCClient.ts#L52">lib/gsc/MockGSCClient.ts:52</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/relaynet-testing-js/blob/646581a/src/lib/gsc/MockGSCClient.ts#L53">lib/gsc/MockGSCClient.ts:53</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
