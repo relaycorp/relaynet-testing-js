@@ -33,7 +33,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@relaycorp/relaynet-core": "^1.50.0"
+    "@relaycorp/relaynet-core": "^1.56.0"
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.4.15",
@@ -47,7 +47,7 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "@relaycorp/relaynet-core": ">= 1.46.2 < 2"
+    "@relaycorp/relaynet-core": ">= 1.56.0 < 2"
   },
   "prettier": "@relaycorp/shared-config/.prettierrc.json",
   "publishConfig": {
