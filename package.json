@@ -35,7 +35,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@relaycorp/relaynet-core": "^1.57.3"
+    "@relaycorp/relaynet-core": "^1.57.5"
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.6.1",
