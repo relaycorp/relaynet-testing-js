@@ -23,14 +23,15 @@ export interface PDACertPath {
  */
 export async function generatePDACertificationPath(
   keyPairSet: NodeKeyPairSet,
+  expiryDate?: Date,
 ): Promise<PDACertPath> {
-  const tomorrow = getTomorrow();
+  const validityEndDate = expiryDate ?? getTomorrow();
 
   const publicGatewayCertificate = reSerializeCertificate(
     await issueGatewayCertificate({
       issuerPrivateKey: keyPairSet.publicGateway.privateKey,
       subjectPublicKey: keyPairSet.publicGateway.publicKey,
-      validityEndDate: tomorrow,
+      validityEndDate,
     }),
   );
 
@@ -39,7 +40,7 @@ export async function generatePDACertificationPath(
       issuerCertificate: publicGatewayCertificate,
       issuerPrivateKey: keyPairSet.publicGateway.privateKey,
       subjectPublicKey: keyPairSet.privateGateway.publicKey,
-      validityEndDate: tomorrow,
+      validityEndDate,
     }),
   );
 
@@ -48,7 +49,7 @@ export async function generatePDACertificationPath(
       issuerCertificate: privateGatewayCertificate,
       issuerPrivateKey: keyPairSet.privateGateway.privateKey,
       subjectPublicKey: keyPairSet.privateEndpoint.publicKey,
-      validityEndDate: tomorrow,
+      validityEndDate,
     }),
   );
 
@@ -57,7 +58,7 @@ export async function generatePDACertificationPath(
       issuerCertificate: privateEndpointCertificate,
       issuerPrivateKey: keyPairSet.privateEndpoint.privateKey,
       subjectPublicKey: keyPairSet.pdaGrantee.publicKey,
-      validityEndDate: tomorrow,
+      validityEndDate,
     }),
   );
 
