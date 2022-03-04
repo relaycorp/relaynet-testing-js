@@ -1,8 +1,9 @@
 import {
   GSCClient,
   ParcelCollection,
+  ParcelCollectionHandshakeSigner,
+  ParcelDeliverySigner,
   PrivateNodeRegistration,
-  Signer,
   StreamingMode,
 } from '@relaycorp/relaynet-core';
 
@@ -29,7 +30,7 @@ export class MockGSCClient implements GSCClient {
   }
 
   public collectParcels(
-    nonceSigners: readonly Signer[],
+    nonceSigners: readonly ParcelCollectionHandshakeSigner[],
     streamingMode: StreamingMode,
     handshakeCallback?: () => void,
   ): AsyncIterable<ParcelCollection> {
@@ -38,7 +39,10 @@ export class MockGSCClient implements GSCClient {
     return call.call(args);
   }
 
-  public async deliverParcel(parcelSerialized: ArrayBuffer, signer: Signer): Promise<void> {
+  public async deliverParcel(
+    parcelSerialized: ArrayBuffer,
+    signer: ParcelDeliverySigner,
+  ): Promise<void> {
     const call = this.getNextCall(DeliverParcelCall);
     const args: DeliverParcelArgs = { parcelSerialized, deliverySigner: signer };
     return call.call(args);

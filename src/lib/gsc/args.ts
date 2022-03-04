@@ -1,4 +1,8 @@
-import { Signer, StreamingMode } from '@relaycorp/relaynet-core';
+import {
+  ParcelCollectionHandshakeSigner,
+  ParcelDeliverySigner,
+  StreamingMode,
+} from '@relaycorp/relaynet-core';
 
 export interface CallArgs {}
 
@@ -12,11 +16,11 @@ export interface RegisterNodeArgs extends CallArgs {
 
 export interface DeliverParcelArgs extends CallArgs {
   readonly parcelSerialized: ArrayBuffer;
-  readonly deliverySigner: Signer;
+  readonly deliverySigner: ParcelDeliverySigner;
 }
 
 export interface CollectParcelsArgs extends CallArgs {
-  readonly nonceSigners: readonly Signer[];
+  readonly nonceSigners: readonly ParcelCollectionHandshakeSigner[];
   readonly streamingMode: StreamingMode;
   readonly handshakeCallback?: () => void;
 }
