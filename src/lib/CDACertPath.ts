@@ -9,7 +9,7 @@ import { getTomorrow, reSerializeCertificate } from './utils';
 
 export interface CDACertPath {
   readonly privateGateway: Certificate;
-  readonly publicGateway: Certificate;
+  readonly internetGateway: Certificate;
 }
 
 export async function generateCDACertificationPath(
@@ -24,16 +24,16 @@ export async function generateCDACertificationPath(
       validityEndDate: tomorrow,
     }),
   );
-  const publicGatewayCertificate = reSerializeCertificate(
+  const internetGatewayCertificate = reSerializeCertificate(
     await issueDeliveryAuthorization({
       issuerCertificate: privateGatewayCertificate,
       issuerPrivateKey: keyPairSet.privateGateway.privateKey,
-      subjectPublicKey: keyPairSet.publicGateway.publicKey,
+      subjectPublicKey: keyPairSet.internetGateway.publicKey,
       validityEndDate: tomorrow,
     }),
   );
   return {
     privateGateway: privateGatewayCertificate,
-    publicGateway: publicGatewayCertificate,
+    internetGateway: internetGatewayCertificate,
   };
 }

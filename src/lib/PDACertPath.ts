@@ -12,7 +12,7 @@ import { getTomorrow, reSerializeCertificate } from './utils';
  * Certification path from a public gateway to a PDA.
  */
 export interface PDACertPath {
-  readonly publicGateway: Certificate;
+  readonly internetGateway: Certificate;
   readonly privateGateway: Certificate;
   readonly privateEndpoint: Certificate;
   readonly pdaGrantee: Certificate;
@@ -27,18 +27,18 @@ export async function generatePDACertificationPath(
 ): Promise<PDACertPath> {
   const validityEndDate = expiryDate ?? getTomorrow();
 
-  const publicGatewayCertificate = reSerializeCertificate(
+  const internetGatewayCertificate = reSerializeCertificate(
     await issueGatewayCertificate({
-      issuerPrivateKey: keyPairSet.publicGateway.privateKey,
-      subjectPublicKey: keyPairSet.publicGateway.publicKey,
+      issuerPrivateKey: keyPairSet.internetGateway.privateKey,
+      subjectPublicKey: keyPairSet.internetGateway.publicKey,
       validityEndDate,
     }),
   );
 
   const privateGatewayCertificate = reSerializeCertificate(
     await issueGatewayCertificate({
-      issuerCertificate: publicGatewayCertificate,
-      issuerPrivateKey: keyPairSet.publicGateway.privateKey,
+      issuerCertificate: internetGatewayCertificate,
+      issuerPrivateKey: keyPairSet.internetGateway.privateKey,
       subjectPublicKey: keyPairSet.privateGateway.publicKey,
       validityEndDate,
     }),
@@ -66,6 +66,6 @@ export async function generatePDACertificationPath(
     pdaGrantee: pdaGranteeCertificate,
     privateEndpoint: privateEndpointCertificate,
     privateGateway: privateGatewayCertificate,
-    publicGateway: publicGatewayCertificate,
+    internetGateway: internetGatewayCertificate,
   };
 }
